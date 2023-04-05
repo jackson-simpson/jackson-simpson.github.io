@@ -8,16 +8,22 @@ body {
   background-color: rgb(168, 224, 166);
 }
 
+h1 {
+  color: White;
+  font-size: 28pt;
+}
+
+
 .nav {
   
   overflow: hidden;
   background-color: darkgreen;
-  margin: 30px 250px 0px 250px;
   padding: 0;
 }
 .nav li{
   float: left;
   list-style-type: none;
+  border-bottom: 50px;
 }
 
 
@@ -37,13 +43,15 @@ body {
 
 .banner1 {
   padding: 30px;
-  margin: 0px 250px 0px 250px;
   text-align: center;
-  background-color: bisque;
+  background-image: url(../images/background-landscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
 }
 .content {
   padding: 30px;
-  margin: 20px 250px 0px 250px;
   text-align: Left;
-  background-color: aqua;
+  background-color: rgb(245, 202, 150);
 }
