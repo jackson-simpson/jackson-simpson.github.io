@@ -8,6 +8,12 @@ body {
   background-color: rgb(168, 224, 166);
 }
 
+h1 {
+  color: White;
+  font-size: 28pt;
+}
+
+
 .nav {
   
   overflow: hidden;
@@ -38,18 +44,14 @@ body {
 .banner1 {
   padding: 30px;
   text-align: center;
-  background-color: bisque;
+  background-image: url(../images/background-landscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 25px;
 }
 .content {
   padding: 30px;
   text-align: Left;
-  background-color: rgb(125, 204, 204);
+  background-color: rgb(245, 202, 150);
 }
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  }
