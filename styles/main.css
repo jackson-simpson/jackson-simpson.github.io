@@ -12,12 +12,12 @@ body {
   
   overflow: hidden;
   background-color: darkgreen;
-  margin: 30px 250px 0px 250px;
   padding: 0;
 }
 .nav li{
   float: left;
   list-style-type: none;
+  border-bottom: 50px;
 }
 
 
@@ -37,13 +37,19 @@ body {
 
 .banner1 {
   padding: 30px;
-  margin: 0px 250px 0px 250px;
   text-align: center;
   background-color: bisque;
+  margin-bottom: 25px;
 }
 .content {
   padding: 30px;
-  margin: 20px 250px 0px 250px;
   text-align: Left;
-  background-color: aqua;
+  background-color: rgb(125, 204, 204);
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  }
