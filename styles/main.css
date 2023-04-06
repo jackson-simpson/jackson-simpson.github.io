@@ -26,7 +26,6 @@ h1 {
   border-bottom: 50px;
 }
 
-
 .nav a {
   float: left;
   display: block;
@@ -50,8 +49,9 @@ h1 {
   background-position: center;
   margin-bottom: 25px;
 }
-.content {
+.container {
   padding: 30px;
+  float: center;
   text-align: Left;
   background-color: rgb(245, 202, 150);
 }
