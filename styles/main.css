@@ -13,8 +13,11 @@ h1 {
   font-size: 28pt;
 }
 
-
 .nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
   overflow: hidden;
   background-color: darkgreen;
   padding: 0;
@@ -54,3 +57,85 @@ h1 {
   background-color: rgb(245, 202, 150);
 }
 
+.example0 {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-row {
+  height: 300px;
+  display: flex;
+  overflow: auto;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.example-1 {
+  width: auto;
+  height: 300px;
+}
+
+.example1-code {
+  width: 250px;
+  height: 300px;
+}
+
+.example-2 {
+  width: auto;
+  height: 300px;
+}
+
+.example-2-code {
+  width: auto;
+  height: 300px;
+}
+
+.example-3 {
+  width: auto;
+  height: 300px;
+}
+
+.example-3-code {
+  width: auto;
+  height: 300px;
+}
+
+.example-4 {
+  width: auto;
+  height: 300px;
+}
+
+.example-4-code {
+  width: 300px;
+  height: 300px;
+}
+
+.example-5-1 {
+  width: auto;
+  height: 300px;
+}
+
+.example-5-2 {
+  width: auto;
+  height: 300px;
+}
+
+.example-5-code {
+  width: 275px;
+  height: 300px;
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+}

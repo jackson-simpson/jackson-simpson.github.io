@@ -27,21 +27,68 @@
     <h2> Technical Blog Post: CSS Concepts </h2>
     <h3><em>Differences between Relative, Absolute and Fixed Positioning</em></h3>
       <p>Our work in sprint 2 has been focused on learning and understanding how to use HTML and CSS. I found that HTML came easily to me, but when it came time to add CSS code, and get it to interact with the content on my webpage I hit a block. Understanding concepts like colour were fine, but I really had a lot of trouble with website responsiveness and element positioning. So for this part of my technical blog, I wanted to go over the research I've done into positioning, and how I now understand it a lot better.</p>
-      <p>The first thing to note is, there are more than the three types of positioning that I am going over in this post, which can also be useful in making a website feel more accessible. But to start we need to talk about the defult property. </p>
+      <p>Positioning is a property you can give elements in CSS for example:</p>
+          <div class="example0">
+            <img src="../images/html-css-blogpost/example 0.png" alt="Example code">
+          </div>
+      <p>Last note before we jump in, there are more than the three types of positioning that I am going over in this post, which can also be useful in making a website feel more accessible. But to start we need to talk about the defult property. </p>
         
         <h4><strong>Static Positioning</strong></h4>   
           <p>Static positioning is the basic, defult property that all elements have. Without any additional position properties, the elemental will act statically. This means it will generally be moving down the working axis of the page, typically vertically. This doesn't give us a lot to work with, so we add other positioning properties to class and ID elements to move them around the page. For example here is some experimenting code I wrote while researching the topic, either following along with youtube tutorials or reading up on tech help websites:</p>
             <div class ="img-row">
-              <div class="img-column"></div>
-                <img class="example-1" src="../images/html-css-blogpost/example1-CSSblog.png" alt="Example 1"> 
-              <div class="img-column">
-                <img class="example1-code" src="../images/html-css-blogpost/example1-code.png" alt="Example 1 Code">
-              </div>
+              <img class="example-1" src="../images/html-css-blogpost/example1-CSSblog.png" alt="Example 1"> 
+              <img class="example1-code" src="../images/html-css-blogpost/example1-code.png" alt="Example 1 Code">
             </div>
           <p>With that out of the way we can move on to...</p>
-
+      
         <h4><strong>Relative Positioning</strong></h4>
+          <p>Relative positioning is moving an element relative to its position in the documents flow by the use of coordinates.</p>
+          <p>Thats a lot of jargon, what does that mean? Essentially:</p>
+            <ol>
+              <li>An <strong>Element</strong> is the thing you are moving, usually something like a division.</li>
+              <li><strong>Document Flow</strong> is how elements arrange themselves down a page, this is by defult done in blocks down a page, and done by inline elements across a page.</li>
+              <li><strong>Coordinates</strong> are the instructions for the positioning; i.e. 'Top: 30px;'</li>
+              <li>and<strong>'Relative to its Position'</strong> means where it already is on your page</li>
+            </ol>
+          <p>This means the 'relative' property does not remove the element from document flow, and that it is displayed position is the only thing that changes. Other elements around will not move up to replace it if say the element moved down the page. It can also move to cover other elements based on the coordinates you use. Note also that coordinates are based on the sides of the element, so if you are moving your element with the coordinates 'Top: 30px;' the element will move <em>down</em> 30px. </p>
+          <div class="img-row">
+             <img class="example-2" src="../images/html-css-blogpost/Example2.png" alt="Example 2">
+             <img class="example-2-code" src="../images/html-css-blogpost/Example2-code.png" alt="Example 2 Code">
+          </div>
+          <p>In the above example, the green box moved down 50px and to the right by 50px.</p>
+        
+        <h4><strong>Absolute Positioning</strong></h4>
+          <p>Absolute positioning is used when we want to set the position of a element <em>outside</em> of the normal document flow. This means a few things, firstly the element will ignore any parent organisation it is nested in i.e. this container division.</li>
+              <div class="img-row">
+                <img class="example-3" src="../images/html-css-blogpost/Example3.png" alt="Example 3">
+                <img class="example-3-code" src="../images/html-css-blogpost/Example3-code.png" alt="Example 3 code">
+              </div>
+              <p style="text-align: center;">In this example the parent element is the 'container'. See how the red box exists outside its border?</p>
+          <p>The elements position will be relative to the 'nearest' applicable parent element, at this stage that is the 'body' of the html file. I.e. the above figure the red box is 5px away from the right.</p>
+          <p>To make the 'nearest' applicable parent element the container again, we just need to apply the 'relative' property to the container:</p>
+              <div class="img-row">
+                <img class="example-4" src="../images/html-css-blogpost/Example4.png" alt="Example 4">
+                <img class="example-4-code" src="../images/html-css-blogpost/Example4-code.png" alt="Example 4 code">
+              </div>
+          <p>Now the red box element is 5px from the right of the containers border. I.e. relative to its parents element.</p>
+          
+        <h4><strong>Fixed Positioning</strong></h4>
+          <p>The last type of positioning we will be discussing in this blog-post is Fixed positioning. This is when the position of the element is not fixed to any other element, rather it is fixed to its position on the display. Much like absolute positioning, it will ignore the normal document flow, as well as any parent elements.</p>
+          <div class="img-row">
+            <img class="example-5-1" src="../images/html-css-blogpost/Example5.png" alt="Example 5.1">
+            <img class="example-5-2" src="../images/html-css-blogpost/Example5.2.png" alt="Example 5.2">
+            <img class="example-5-code" src="../images/html-css-blogpost/Example5-code.png" alt="Example 5 code">
+          </div>
+          <p>Note the position of the scroll-bar. Despite going down the page, the element has not moved. This can be useful for anchoring messages or images to certain parts of your website.</p>
 
+      <p>And those are basically the differences between these three positioning properities. There are others, such as 'sticky' positioning and they can also be very helpful tools. But for the moment this is where I end the post for today. Attached below are some sources I used for my research if you would like to continue to review the differences between CSS positioning.</p>
+        <ul>
+         <li><a href="https://www.youtube.com/watch?v=h_Smqpqs_1k&ab_channel=CemEygiMedia">"CSS Position: Relative, Absolute, Fixed, Sticky Explained" Cem Eygi Media (Youtube)</a></li>
+         <li><a href="https://www.youtube.com/watch?v=UO8ed-JB4So&ab_channel=FollowAndrew">"CSS Positioning Tutorial - Relative vs. Absolute vs. Fixed vs. Sticky" Follow Andrew (Youtube)</a></li>
+         <li><a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ">"Absolute, Relative, Fixed Positioning: How Do They Differ?" Chris Coyier, CSS-tricks.com </a></li>
+         <li><a href="https://www.geeksforgeeks.org/difference-between-relative-and-absolute-position-in-css/">"Difference between relative , absolute and fixed position in CSS" GeeksforGeeks.org</a></li>
+        </ul>
+    <h3><em>08/04/2023</em></h3>    
   </div>
 
 </body>
