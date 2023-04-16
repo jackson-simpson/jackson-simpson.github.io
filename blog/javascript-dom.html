@@ -35,8 +35,45 @@
           <p>This week was all about the language of modern internet design, JavaScript. Unbeknownst to me, language is a very apt description. This week felt like learning a new way of communicating. So, let me communicate to you, what I learnt in JavaScript.</p>
         
         <h3><em>JavaScript, HTML and CSS: What Makes a Website</em></h3>
-          <p></p>
+          <p>JavaScript is a coding language that makes <strong>interacting</strong> with a webpage possible. Without JavaScript, websites would essentially be books.</p>
+          <p>For example, HTML would be the words on the page with hyperlinks and anchors being in-page references to different books or pages. CSS would be the books styling, the colour of the pages, the texture of the page, the orginisation of photos and texts.JavaScript allows this book to <em>talk back</em> to the reader. It allows actions to be taken within a website by a user.</p>
+          <p>The last thing to note before continuing is a concept known as <em>'control flow'</em>. Control flow is in short, how code is read. JavaScript specifically will read down a file from its first line until its last line, unless something is written into the code that changes this flow i.e. a 'loop'. Control flow is like following a recipe in a cookbook. You follow the steps from the first step until the last step, except if you need to stop your normal flow to prepare something like a sauce, or cake icing (i.e. a 'conditional'), or if you need to go back and repeat steps 3-6 of the recipe (i.e. a loop)</p>
+
+        <h3><em>Types of Data in JavaScript</em></h3>
+          <p>JavaScript allows for interaction through the manipulation of 'data' which JavaScript refers to as a 'variable'. This is important to note, as the rest of this blog is describing how JavaScript can be used to manipulate variables. The main thing to note about variables, is that they need to be defined alongside a value. For example:</p>
+            <img src="../images/js-dom/Example1.png" alt="variable example">
+          <p><strong>Figure 1:</strong> An example of a variable.</p>
+          <p>As you can see in the figure above, the variable 'currentBalance' has been defined as being zero (ouch), but it doesn't have to be a numerical value:</p>
+            <img src="../images/js-dom/Example2.png" alt="variable example 2">
+          <p><strong>Figure 2:</strong> A variable with a 'string' as a value.</p>
+          <p>Figure 2 has a variable with a string as its value. A string is just a 'string' of characters i.e. words or sentances.</p>
         
+          <h3><em>Objects and Arrays</em></h3>
+            <p>Now that we know about variables, we can discuss variables that contain 'sets' of data, rather than just one set value. Generally we need to store sets of data in JavaScript we can use an 'Array'.</p>
+              <h4>Arrays</h4>
+                <p>We can use arrays to store an ordered list of values. For example if we wanted to create list for a party:</p>
+                  <img src="../images/js-dom/Example3.png" alt="Array example 1">
+                  <p><strong>Figure 3:</strong> An array of names</p>
+                <p>Now the variable 'partyList' has the values denoted in the square brackets (how we specify arrays). If we wanted to retrive the data within the array we would need to write some code like this:</p>
+                  <img src="../images/js-dom/Example4.png" alt="Array example 2">
+                  <p><strong>Figure 4:</strong> Code used to retrive array data</p>
+                <p>Note that this list starts counting from zero. This will likely confuse me until the end of time. </p>
+                <p>So, arrays are useful for making ordered lists, but what if we didn't care so much about the order, but we did need to keep track of additional information relating to a variable? For this we can use objects.</p>
+              <h4>Objects</h4>
+                <p>Objects are very useful for attributing mutliple values to something, using what are known as 'Key/Value pairs'. They essentially at as sub-variables for the object:</p>
+                  <img src="../images/js-dom/Example5.png" alt="Object example 1">
+                  <p><strong>Figure 5:</strong>An object variable, including within its keys and their values</p>
+                <p>Using objects, we can then retrive and access the specific keys within, allowing us to interact this with other data, or keep track of specific values. Like arrays we need code to pull out and access these keys, so we need to write some code like this:</p>
+                  <img src="../images/js-dom/Figure6.png" alt="Object example 2">
+                  <p><strong>Figure 6:</strong>Code used to retrive object data</p>
+                <p>Note instead of using brackets for denoting which key value we want, we use the objects name followed by a fullstop and then the keys name.</p>
+          
+          <h3><em>Functions</em></h3>    
+          <p></p>
+
+
+          <h3><em>The DOM</em></h3>
+
       </div>
 
     </body>
