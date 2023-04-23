@@ -106,6 +106,13 @@ h1 {
   justify-content: center;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
 .img-row {
   height: 300px;
   display: flex;
